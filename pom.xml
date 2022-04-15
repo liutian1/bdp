@@ -18,5 +18,13 @@
         <module>scala_practice</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.1.37</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
