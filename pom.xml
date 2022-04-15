@@ -15,6 +15,7 @@
         <module>spark_sql</module>
         <module>spark_streaming</module>
         <module>flink_practice</module>
+        <module>scala_practice</module>
     </modules>
 
 
