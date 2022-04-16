@@ -7,6 +7,7 @@ package com.txliu.demo.practice01;
  */
 public class Hello {
     public static void main(String[] args) {
+        // test
         System.out.println("hello world");
     }
 }
