@@ -3,3 +3,8 @@
 *.ipr
 *.iml
 *.iws
+.DS_Store
+logs
+out
+gen
+target
