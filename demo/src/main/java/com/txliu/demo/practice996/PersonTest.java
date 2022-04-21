@@ -1,6 +1,6 @@
 package com.txliu.demo.practice996;
 
-import lombok.extern.slf4j.Slf4j;
+import org.apache.log4j.Logger;
 
 
 /**
@@ -8,13 +8,10 @@ import lombok.extern.slf4j.Slf4j;
  * @Author : txliu
  * @Date: 2022-04-20 21:16
  */
-@Slf4j
 public class PersonTest {
+    public static final Logger logger = Logger.getLogger(PersonTest.class);
     public static void main(String[] args) {
         Person person = new Person();
-        log.info("nihao");
-        log.info("nihao");
-        log.info("nihao");
-        log.error("nihao");
+        logger.error("123456");
     }
 }
