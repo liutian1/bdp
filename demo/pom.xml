@@ -20,8 +20,36 @@
                     <target>8</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <!--只执行一次-->
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <archive>
+                                <manifest>
+                                    <!--jar包的入口 main方法-->
+                                    <mainClass>com.txliu.demo.practice996.PersonTest</mainClass>
+                                </manifest>
+                            </archive>
+                            <!-- 生成的jar包的名称前缀 -->
+                            <finalName>ProjectName</finalName>
+                            <descriptors>
+                                <!-- assembly插件的配置文件路径 -->
+                                <descriptor>assembly/assembly.xml</descriptor>
+                            </descriptors>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
     </build>
-
 
 </project>
