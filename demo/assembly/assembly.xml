@@ -17,11 +17,11 @@
             <outputDirectory>/</outputDirectory>
             <fileMode>0644</fileMode>
         </fileSet>
-        <fileSet>
-            <directory>conf</directory>
-            <outputDirectory>/conf</outputDirectory>
-            <fileMode>0644</fileMode>
-        </fileSet>
+<!--        <fileSet>-->
+<!--            <directory>conf</directory>-->
+<!--            <outputDirectory>/conf</outputDirectory>-->
+<!--            <fileMode>0644</fileMode>-->
+<!--        </fileSet>-->
         <fileSet>
             <directory>${profile.dir}</directory>
             <outputDirectory>/</outputDirectory>
