@@ -17,6 +17,7 @@ import java.util.Map;
 public class PersonTest {
     public static final Logger logger = Logger.getLogger(PersonTest.class);
     public static void main(String[] args) throws IOException {
+        System.out.println("************assembly**************");
         Person person = new Person();
         System.out.println("123523625");
         Map<String, String> map = new HashMap<>();
