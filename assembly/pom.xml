@@ -69,6 +69,7 @@
                                 <!-- assembly插件的配置文件路径 -->
                                 <descriptor>assembly/assembly.xml</descriptor>
                             </descriptors>
+                            <!--  文件输出目录-->
                             <outputDirectory>${project.parent.basedir}/dist</outputDirectory>
                         </configuration>
                     </execution>
