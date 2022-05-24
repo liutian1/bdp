@@ -1,15 +1,15 @@
 <assembly>
-<!--    包的后缀名-->
+    <!--    包的后缀名-->
     <id>bin</id>
-<!--    <id>test</id>-->
     <formats>
         <!--支持 zip，tar，tar.gz，tar.bz2，jar，dir，war 等 -->
         <format>zip</format>
     </formats>
     <includeBaseDirectory>true</includeBaseDirectory>
+    <!--    解压后包名-->
     <baseDirectory>${dir.name}</baseDirectory>
     <fileSets>
-<!--        jar包-->
+        <!--        jar包-->
         <fileSet>
             <directory>${project.parent.basedir}/demo/target</directory>
             <outputDirectory>lib/third-lib</outputDirectory>
@@ -17,7 +17,7 @@
                 <include>*.jar</include>
             </includes>
         </fileSet>
-<!--        resources 文档-->
+        <!--        resources 文档-->
         <fileSet>
             <directory>${project.parent.basedir}/demo/src/main/resources</directory>
             <outputDirectory>etc</outputDirectory>
@@ -26,7 +26,7 @@
                 <include>*.properties</include>
             </includes>
         </fileSet>
-<!--        执行脚本-->
+        <!--        执行脚本-->
         <fileSet>
             <directory>${project.parent.basedir}/assembly/shell</directory>
             <outputDirectory>/</outputDirectory>

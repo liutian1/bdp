@@ -21,6 +21,7 @@
         <assembly.format>tgz</assembly.format>
         <skipDeploy>true</skipDeploy>
         <maven.build.timestamp.format>yyyyMMdd</maven.build.timestamp.format>
+        <dir.name>bdp-install-runtime-${project.bdp.assembly.version}</dir.name>
     </properties>
 
 
