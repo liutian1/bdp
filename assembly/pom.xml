@@ -17,9 +17,10 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <assembly.name>bdp-test-${project.bdp.assembly.version}</assembly.name>
+        <assembly.name>bdp-install-runtime-${project.bdp.assembly.version}-${maven.build.timestamp}</assembly.name>
         <assembly.format>tgz</assembly.format>
         <skipDeploy>true</skipDeploy>
+        <maven.build.timestamp.format>yyyyMMdd</maven.build.timestamp.format>
     </properties>
 
 
@@ -62,6 +63,8 @@
                             </archive>
                             <!-- 生成的jar包的名称前缀 -->
                             <finalName>${assembly.name}</finalName>
+                            <!-- 不添加assembly id 到包名里-->
+                            <appendAssemblyId>false</appendAssemblyId>
                             <descriptors>
                                 <!-- assembly插件的配置文件路径 -->
                                 <descriptor>assembly/assembly.xml</descriptor>
